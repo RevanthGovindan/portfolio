@@ -5,3 +5,28 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
+.my-name{
+  padding:10px;
+  white-space: nowrap;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description{
+  padding:10px;
+}
+
+.my-image{
+  max-width: 50%;
+  border-radius: 50%;
+}

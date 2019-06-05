@@ -1,15 +1,19 @@
 import React from 'react';
 
 
-function Feedback() {
+function Feedbacks() {
     return (
-        <div className="container feedback fillwidth fillheight">
+        <div className="container feedback fillwidth">
             <div className="headers">
                 <span>Feedback</span>
+            </div>
+            <div className="feedback">
+                
+               
             </div>
 
         </div>
     );
 }
 
-export default Feedback;
+export default Feedbacks;

@@ -35,8 +35,9 @@ a:hover{
 .navbar{
   width: 100%;
   background-color: #1d1818;
-  position: fixed;
+  height: 40px;
   border-bottom: 3px solid #007bff;
+  color: white;
 }
 
 section {
@@ -57,4 +58,25 @@ section .container {
   text-decoration: underline;
   text-align: center;
   padding-top: 20px;
+}
+
+.navbar-ul{
+  width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+
+.navbar-ul > li {
+  cursor: pointer;
+}
+
+.navbar-ul > li.active {
+  color: #007bff;
+}
+
+.container-body{
+  height: calc(100% - 40px);
 }
