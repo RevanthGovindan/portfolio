@@ -1,0 +1,39 @@
+.feedback-description{
+    width: 60%;
+}
+
+.forward-btn{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+}
+
+.back-btn{
+    width: 5%;
+    background-color: transparent;
+    border: none;
+}
+
+.forward-btn:disabled{
+    color: silver;
+}
+
+.back-btn:disabled{
+    color: silver;
+}
+
+.review{
+    text-align: justify;
+}
+
+.feedback-body{
+    height: 80%;
+}
+
+.by{
+    text-align: right;
+}
+
+.by-position{
+    text-align: right;
+}

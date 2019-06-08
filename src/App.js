@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   const [currentTab, setCurrentTab] = useState(navBar.HOME)
   const components = {
-    HOME: <Home />, SKILLS: <Skills />, EDUCATION: <Education />,
+    HOME: <Home />, SKILLS: <Skills />, WORK:<Work/>, EDUCATION: <Education />,
     FEEDBACKS: <Feedbacks />, CONTACT: <Contact />
   }
 
@@ -27,10 +27,14 @@ function App() {
             onClick={() => setCurrentTab(navBar.SKILLS)}>
             Skills
           </li>
-          <li className={(currentTab === navBar.EDUCATION ? "active" : '')}
+          <li className={(currentTab === navBar.WORK ? "active" : '')}
+            onClick={() => setCurrentTab(navBar.WORK)}>
+            Work
+          </li>
+          {/* <li className={(currentTab === navBar.EDUCATION ? "active" : '')}
             onClick={() => setCurrentTab(navBar.EDUCATION)}>
             Education
-          </li>
+          </li> */}
           <li className={(currentTab === navBar.FEEDBACKS ? "active" : '')}
             onClick={() => setCurrentTab(navBar.FEEDBACKS)}>
             Feedbacks

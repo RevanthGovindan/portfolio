@@ -1,6 +1,7 @@
 @import "./css/skills.css";
 @import "./css/work.css";
 @import "./css/home.css";
+@import "./css/feedbacks.css";
 
 .home {
   
@@ -12,6 +13,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav > div{
@@ -35,9 +37,10 @@ a:hover{
 .navbar{
   width: 100%;
   background-color: #1d1818;
-  height: 40px;
+  height: 10%;
   border-bottom: 3px solid #007bff;
   color: white;
+  overflow-y: scroll;
 }
 
 section {
@@ -67,9 +70,11 @@ section .container {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 0px;
+    flex-wrap: wrap;
 }
 
 .navbar-ul > li {
+  min-width: 100px !important;
   cursor: pointer;
 }
 

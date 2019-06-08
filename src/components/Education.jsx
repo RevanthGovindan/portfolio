@@ -3,10 +3,11 @@ import React from 'react';
 
 function Education() {
     return (
-        <div className="container education fillwidth fillheight">
+        <div className="education fillwidth fillheight">
             <div className="headers">
-                <span>Education</span>
+                <span>My Education</span>
             </div>
+            
 
         </div>
     );

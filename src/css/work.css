@@ -1,0 +1,30 @@
+.work{
+    padding: 10px;
+}
+
+.work-body{
+    padding-top: 20px;
+}
+
+.prod-name{
+    width: 25%;
+}
+
+.tech-name{
+    width: 25%;
+}
+
+.desc-name{
+    width: 50%;
+    text-align: center;
+}
+
+.work-header{
+    text-decoration: underline;
+}
+
+.divider{
+    width: 100%;
+    border-bottom: 1px solid #007BFF;
+    padding-bottom: 10px;
+}

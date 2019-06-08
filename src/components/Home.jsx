@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className="fillwidth">
             <div className="headers">
-                <span>Home</span>
+                <span>My Self</span>
             </div>
             <div className="home">
                 <div className="my-name">

@@ -1,0 +1,20 @@
+.skills-body > div > span:first-child{
+    max-width: 20%;
+    text-align: right;
+}
+
+.tech-name{
+    width: 20%;
+}
+
+.tech-per {
+    width: 60%;
+}
+
+.per-bar{
+    background-color: #d6d3cf;
+    margin: 2px 0px 2px 0px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}

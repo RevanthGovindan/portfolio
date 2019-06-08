@@ -7,7 +7,12 @@ function Contact() {
             <div className="headers">
                 <span>Contact</span>
             </div>
-
+            <div className="contact-body">
+                <div className="flex">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
     );
 }
