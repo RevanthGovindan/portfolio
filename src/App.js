@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   const [currentTab, setCurrentTab] = useState(navBar.HOME)
   const components = {
-    HOME: <Home />, SKILLS: <Skills />, WORK:<Work/>, EDUCATION: <Education />,
+    HOME: <Home />, SKILLS: <Skills />, WORK: <Work />, EDUCATION: <Education />,
     FEEDBACKS: <Feedbacks />, CONTACT: <Contact />
   }
 
