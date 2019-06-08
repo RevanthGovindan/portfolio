@@ -13,7 +13,7 @@
 }
 
 .name-input>input{
-    width: 40%;
+    width: 60%;
 }
 
 .number-input{
@@ -24,7 +24,7 @@
 }
 
 .number-input>input{
-    width: 40%;
+    width: 60%;
 }
 
 .message-input{
@@ -35,6 +35,38 @@
 }
 
 .message-input>textarea{
-    width: 40%;
+    width: 60%;
     height: 130px;
+}
+
+.social-media{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.fa{
+    font-size: 20px;
+}
+
+.social-media>div:nth-child(2)>a>i{
+    color: black;
+}
+
+.social-media>div:nth-child(3)>a>i{
+    color: rgb(34, 34, 117);
+}
+
+.social-media>div:nth-child(4)>a>i{
+    color: rgb(231, 93, 134);
+}
+
+.social-media>div:nth-child(5)>a>i{
+    color: red;
+}
+
+.social-media>div:nth-child(6)>a>i{
+    color: rgb(49, 97, 49);
 }

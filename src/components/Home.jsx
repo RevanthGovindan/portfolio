@@ -17,9 +17,11 @@ function Home() {
                     </div>
                 </div>
                 <div className="description">
-                    <span>
+                    <span style={{textAlign:"justify"}}>
                         Hi, I'm full stack developer, I enjoy building applications from scratch,I love to
-                        solve complex problems and always I will be commited to work.
+                        solve complex problems in <a href="">Hackerrank</a> and <a href="">Ebox</a> platforms.
+                        I can say leadership is my best quality.
+                        My hobbies are hearing musics, watching movies and riding in bike.
                     </span>
                 </div>
             </div>
