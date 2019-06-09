@@ -4,10 +4,6 @@
 @import "./css/feedbacks.css";
 @import "./css/contact.css";
 
-.home {
-  
-}
-
 .flex {
   width: 100%;
   display: flex;
@@ -38,15 +34,12 @@ a:hover{
 .navbar{
   width: 100%;
   background-color: #1d1818;
-  height: 10%;
   border-bottom: 3px solid #007bff;
   color: white;
-  overflow-y: scroll;
 }
 
 section {
-  padding: 50px 0 00px 0;
-  
+  padding: 50px 0 0px 0;
 }
 
 section .container {
@@ -65,17 +58,24 @@ section .container {
 }
 
 .navbar-ul{
-  width: 100%;
+    width: 100%;
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    display: none;
+    flex-direction: column;
     justify-content: space-around;
     margin-bottom: 0px;
     flex-wrap: wrap;
+    height: 220px;
+    transition: height .3s ease-out;
 }
-
+.navbar-ul.visible{
+  position: absolute;
+    display: flex;
+    overflow: hidden;
+    top: 49px;
+    background: #333;
+}
 .navbar-ul > li {
-  min-width: 100px !important;
   cursor: pointer;
 }
 
@@ -85,4 +85,47 @@ section .container {
 
 .container-body{
   height:90%;
+}
+
+.mdi {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+nav .mdi-menu {
+  position: absolute;
+  right: 5vw;
+  margin: auto 0;
+  font-size: 30pt;
+  line-height: 36pt;
+  top: 0;
+}
+
+@media screen and (min-width: 600px) {
+nav .mdi-menu {
+    display: none;
+}
+.navbar-ul > li {
+  cursor: pointer;
+  width: 100px;
+}
+
+.navbar-ul{
+  padding-top: 15px;
+  flex-direction: row;
+  position: initial;
+  display: flex;
+}
+.navbar{
+  height: 10%;
+}
+}
+
+.mdi-menu:before {
+  content: "\F35C";
 }

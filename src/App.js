@@ -9,26 +9,28 @@ import { navBar } from './constants';
 import './App.css';
 
 function App() {
-  const [currentTab, setCurrentTab] = useState(navBar.HOME)
+  const [currentTab, setCurrentTab] = useState(navBar.HOME);
+  const [isSmallNav, setSmallNav] = useState(false);
   const components = {
-    HOME: <Home />, SKILLS: <Skills />, WORK: <Work />, EDUCATION: <Education />,
+    HOME: <Home changeTab={() => setCurrentTab(navBar.CONTACT)} />, SKILLS: <Skills />,
+    WORK: <Work />, EDUCATION: <Education />,
     FEEDBACKS: <Feedbacks />, CONTACT: <Contact />
   }
 
   return (
     <div className="App fillheight fillwidth">
       <nav className="flex navbar">
-        <ul className="navbar-ul">
+        <ul className={"navbar-ul " + (isSmallNav ? "visible" : "")}>
           <li className={(currentTab === navBar.HOME ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.HOME)}>
+            onClick={() => { setCurrentTab(navBar.HOME); setSmallNav(false) }}>
             Home
           </li>
           <li className={(currentTab === navBar.SKILLS ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.SKILLS)}>
+            onClick={() => { setCurrentTab(navBar.SKILLS); setSmallNav(false) }}>
             Skills
           </li>
           <li className={(currentTab === navBar.WORK ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.WORK)}>
+            onClick={() => { setCurrentTab(navBar.WORK); setSmallNav(false) }}>
             Work
           </li>
           {/* <li className={(currentTab === navBar.EDUCATION ? "active" : '')}
@@ -36,14 +38,17 @@ function App() {
             Education
           </li> */}
           <li className={(currentTab === navBar.FEEDBACKS ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.FEEDBACKS)}>
+            onClick={() => { setCurrentTab(navBar.FEEDBACKS); setSmallNav(false) }}>
             Feedbacks
           </li>
           <li className={(currentTab === navBar.CONTACT ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.CONTACT)}>
+            onClick={() => { setCurrentTab(navBar.CONTACT); setSmallNav(false) }}>
             Contact
           </li>
         </ul>
+        <span onClick={(e) => { setSmallNav(!isSmallNav) }}>
+          <i class="mdi mdi-menu"></i>
+        </span>
       </nav>
       <div className="container-body fillwidth">
         {components[currentTab]}
