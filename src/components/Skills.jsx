@@ -11,7 +11,7 @@ function Skills() {
                 {
                     skills.map((row, key) => {
                         return (
-                            <div className="flex">
+                            <div className="flex" key={key}>
                                 <span className="tech-name">{row.name}</span>
                                 <span className="tech-per">
                                     <div className="per-bar">
