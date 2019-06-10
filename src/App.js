@@ -33,10 +33,6 @@ function App() {
             onClick={() => { setCurrentTab(navBar.WORK); setSmallNav(false) }}>
             Work
           </li>
-          {/* <li className={(currentTab === navBar.EDUCATION ? "active" : '')}
-            onClick={() => setCurrentTab(navBar.EDUCATION)}>
-            Education
-          </li> */}
           <li className={(currentTab === navBar.FEEDBACKS ? "active" : '')}
             onClick={() => { setCurrentTab(navBar.FEEDBACKS); setSmallNav(false) }}>
             Feedbacks
@@ -47,7 +43,7 @@ function App() {
           </li>
         </ul>
         <span onClick={(e) => { setSmallNav(!isSmallNav) }}>
-          <i class="mdi mdi-menu"></i>
+          <i class="glyphicon glyphicon-align-justify di di-menu"></i>
         </span>
       </nav>
       <div className="container-body fillwidth">

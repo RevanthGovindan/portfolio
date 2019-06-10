@@ -13,11 +13,12 @@ function Home(props) {
                         <img className="my-image" src={user} alt="Avatar" />
                     </div>
                     <div>
-                        <span>Revanth G</span>
+                        <span>Revanth G </span>
+                        {/* <span>B.Tech - IT</span> */}
                     </div>
                 </div>
                 <div className="description">
-                    <span style={{ textAlign: "justify" }}>
+                    <div style={{ textAlign: "justify" }}>
                         Hi, I'm full stack developer, I enjoy building applications from scratch,I love to
                         solve complex problems in <a href="https://www.hackerrank.com/Revanth_G" target="_blank"
                         rel="noopener noreferrer">
@@ -25,9 +26,9 @@ function Home(props) {
                             rel="noopener noreferrer">Ebox</a> platforms.
                         I can proudly say that leadership is my best quality.
                         My hobbies are hearing musics, watching movies and riding in bike.
-                    </span><br />
-                    <span className="flex" onClick={() => props.changeTab()}>
-                        <a>Let's discuss</a>
+                    </div><br />
+                    <span className="flex contact-link" onClick={() => props.changeTab()}>
+                        Let's discuss
                     </span>
                 </div>
             </div>

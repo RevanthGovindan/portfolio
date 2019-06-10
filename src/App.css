@@ -36,6 +36,7 @@ a:hover{
   background-color: #1d1818;
   border-bottom: 3px solid #007bff;
   color: white;
+  margin-bottom: 0px;
 }
 
 section {
@@ -51,7 +52,7 @@ section .container {
 }
 
 .headers{
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: underline;
   text-align: center;
   padding-top: 20px;
@@ -87,9 +88,8 @@ section .container {
   height:90%;
 }
 
-.mdi {
+.di {
   display: inline-block;
-  font: normal normal normal 24px/1 "Material Design Icons";
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -97,17 +97,17 @@ section .container {
   transform: translate(0, 0);
 }
 
-nav .mdi-menu {
+nav .di-menu {
   position: absolute;
   right: 5vw;
   margin: auto 0;
-  font-size: 30pt;
+  font-size: 20pt;
   line-height: 36pt;
   top: 0;
 }
 
 @media screen and (min-width: 600px) {
-nav .mdi-menu {
+nav .di-menu {
     display: none;
 }
 .navbar-ul > li {
@@ -121,10 +121,19 @@ nav .mdi-menu {
   display: flex;
 }
 .navbar{
+  margin-bottom: 0px;
   height: 10%;
 }
 }
 
-.mdi-menu:before {
+/* .di-menu:before {
   content: "\F35C";
+} */
+
+.text-justify{
+  text-align: justify;
+}
+
+.contact-link{
+  color: #007bff;
 }

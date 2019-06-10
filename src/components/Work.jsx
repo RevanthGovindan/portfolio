@@ -1,33 +1,49 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { myWork } from '../constants';
 
+function RowItem(props) {
+    const [showDescription, setShowDescription] = useState(false);
+    const description = useRef(null);
+
+    return (
+        <div>
+            <div className="prod" onClick={(e) => { setShowDescription(!showDescription) }}>
+                <div className="prod-name">
+                    {props.row.productName}
+                </div>
+                <div>
+                    <i className="glyphicon glyphicon-triangle-bottom"></i>
+                </div>
+            </div>
+            <div ref={description} className="prod-head" style={{
+                maxHeight: (showDescription ? description.current.scrollHeight : 0),
+                boxShadow: (showDescription ? "" : "none")
+            }}>
+                <div className={"prod-description text-justify"}>
+                    <span><h5>Technologies :</h5></span>
+                    {props.row.technologies}<br />
+                    <span><h5>Description :</h5></span>
+                    {props.row.description}<br />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+
 function Work() {
+
     return (
         <div className="work fillwidth fillheight">
             <div className="headers">
                 <span>My Work</span>
             </div>
             <div className="work-body">
-                <div className="flex">
-                    <div className="prod-name work-header">Product Name</div>
-                    <div className="tech-name work-header">Technology</div>
-                    <div className="desc-name work-header">Description</div>
-                </div>
                 {
                     myWork.map((row, key) => {
                         return (
-                            <div className="flex">
-                                <div className="prod-name">
-                                    {row.productName}
-                                </div>
-                                <div className="tech-name">
-                                    {row.technologies}
-                                </div>
-                                <div className="desc-name">
-                                    {row.description}
-                                </div>
-                                <div className="divider">
-                                </div>
+                            <div>
+                                <RowItem row={row} />
                             </div>
                         )
                     })
