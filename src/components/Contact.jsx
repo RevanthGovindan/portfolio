@@ -38,13 +38,13 @@ function Contact() {
             <div className="contact-body">
                 <div className="inputs">
                     <div className="name-input">
-                        <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
+                        <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name}/>
                     </div>
                     <div className="number-input">
-                        <input type="text" placeholder="Email/Number" onChange={(e) => setNumber(e.target.value)} />
+                        <input type="text" placeholder="Email/Number" onChange={(e) => setNumber(e.target.value)} value={number}/>
                     </div>
                     <div className="message-input">
-                        <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
+                        <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} value={message}/>
                     </div>
                     <div>
                         <button className="btn btn-primary" onClick={() => { onSendClick() }}>
