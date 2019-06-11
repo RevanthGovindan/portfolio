@@ -16,10 +16,16 @@ function Contact() {
                 message: message
             })
                 .then(function () {
-                    console.log("Document successfully written!");
+                    setName("");
+                    setNumber("");
+                    setMessage("");
+                    alert("I will contact you soon!")
                 })
                 .catch(function (error) {
-                    console.error("Error writing document: ", error);
+                    setName("");
+                    setNumber("");
+                    setMessage("");
+                    alert("Error Occured, Please try after some time...")
                 });
         }
     }
