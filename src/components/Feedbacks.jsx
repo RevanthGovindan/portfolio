@@ -18,6 +18,17 @@ function Feedbacks() {
                     <div className="review">{feedback[activeOne].feedback}</div>
                     <div className="by">- {feedback[activeOne].by}</div>
                     <div className="by-position">{feedback[activeOne].position}</div>
+                    <div className="star-position">
+                        {
+                            [1, 2, 3, 4, 5].map((val, ind) => {
+                                return (
+                                    <span class={"fa fa-star "+(feedback[activeOne].ratings >= val?"checked":"")}>
+                                        
+                                    </span>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
                 <button className="forward-btn" disabled={activeOne === (totalLength - 1)}
                     onClick={() => { setActive(activeOne + 1) }}>

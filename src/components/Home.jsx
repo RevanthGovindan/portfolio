@@ -25,7 +25,7 @@ function Home(props) {
                             Hackerrank</a> and <a href="http://app.e-box.co.in" target="_blank"
                             rel="noopener noreferrer">Ebox</a> platforms.
                         I can proudly say that leadership is my best quality.
-                        My hobbies are hearing musics, watching movies and riding in bike.
+                        My hobbies are listening to musics, watching movies, riding and travelling.
                     </div><br />
                     <span className="flex contact-link" onClick={() => props.changeTab()}>
                         Let's discuss

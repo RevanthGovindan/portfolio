@@ -37,3 +37,11 @@
 .by-position{
     text-align: right;
 }
+
+.star-position{
+    text-align: center;
+}
+
+.checked{
+    color: orange;
+}

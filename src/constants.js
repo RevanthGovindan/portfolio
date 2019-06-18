@@ -42,10 +42,12 @@ export const myWork = [
 export const feedback = [
     {
         feedback: "Revanth is an excellent contributor to the project and hence the company. He takes interests to take up any responsibility and goes to any extent in fulfilling the task requirements. And Shows excellent capability and interest to learn and adapt to latest technologies and libraries. He is a technology enthusiast and often comes up with ideas and concepts of latest frameworks and technologies. He from this few months of experience has grabbed a handful of skills to both work in front-end and middleware technologies.  He is an effective communicator and possess good team working skills.",
-        by: "Vijayakanth P", position: "Team Lead(Market Simplified)"
+        by: "Vijayakanth P", position: "Team Lead(Market Simplified)",
+        ratings:5
     },
     {
         feedback: "Revanth has shown the highest levels of commitments  and ownership in taking up initiatives to complete tasks on time. He has been proactive on this especially when doing impact analysis on specific changes. That has helped in yielding better quality releases. He is also well aware of his boundaries and knows when to seek help. He is adaptable and has the willingness to learn. Never misses an opportunity to learn and contribute. Has been able to consistently perform under pressure. Has been a single man army for Frontend in a complex project like Indiabulls.",
-        by: "Hiran Ramankutty", position: "Project Lead(Market Simplified)"
+        by: "Hiran Ramankutty", position: "Project Lead(Market Simplified)",
+        ratings:4
     }
 ];
