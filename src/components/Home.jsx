@@ -13,7 +13,7 @@ function Home(props) {
                         <img className="my-image" src={user} alt="Avatar" />
                     </div>
                     <div>
-                        <span>Revanth G </span>
+                        <span className="name-text">Revanth G </span>
                         {/* <span>B.Tech - IT</span> */}
                     </div>
                 </div>

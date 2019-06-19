@@ -32,4 +32,9 @@
 .my-image{
   max-width: 70%;
   border-radius: 50%;
+  max-height: 450px;
+}
+
+.name-text{
+  text-decoration: underline;
 }
