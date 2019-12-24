@@ -24,7 +24,7 @@ function Home(props) {
                             rel="noopener noreferrer">
                             Hackerrank</a> and <a href="http://app.e-box.co.in" target="_blank"
                                 rel="noopener noreferrer">Ebox</a> platforms.
-                I use primarily use Javascript(with frameworks) and Java,but I'm
+                I primarily use Javascript(with frameworks) and Java,but I'm
                 ready to work on any language, I write reusable codes.
 I can proudly say that leadership is my best quality.
 My hobbies are listening to musics, watching movies and riding.

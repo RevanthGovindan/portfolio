@@ -7,7 +7,7 @@ function RowItem(props) {
 
     return (
         <div>
-            <div className="prod" onClick={(e) => { setShowDescription(!showDescription) }}>
+            <div className="prod mouse-pointer" onClick={(e) => { setShowDescription(!showDescription) }}>
                 <div className="prod-name">
                     {props.row.productName}
                 </div>
@@ -24,6 +24,8 @@ function RowItem(props) {
                     {props.row.technologies}<br />
                     <span><h5>Description :</h5></span>
                     {props.row.description}<br />
+                    <span><h5>URL :</h5></span>
+                    <a href={props.row.url} target="_blank">{props.row.url}</a>
                 </div>
             </div>
         </div>

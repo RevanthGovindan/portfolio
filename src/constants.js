@@ -24,19 +24,23 @@ export const skills = [
 export const myWork = [
     {
         productName: "Examly", technologies: "Angular 4, PrimeNg, Hapi Js, MySQL, Sequelize Js",
-        description: "It is online examination tool, can be used by colleges and corporates to hire best candidates."
+        description: "Examly is an AI Powered, Mobile First, Learning & Assessment Tool for corporates and coaching centers of all sizes, white labeling is highlighting feature of it, based on test data we can track upto individual student performance.",
+        url: "https://examly.io"
     },
     {
         productName: "Shubh Trade", technologies: "Java, React Js,Redux Js, SQL",
-        description: "An online Indian trade platform with both NSE and BSE exchanges with huge number of active users."
+        description: "An online Indian trade platform with both NSE and BSE exchanges with huge number of active users. Listed in top 10 brokerage applications in India.",
+        url: "https://shubhweb.indiabulls.com/"
     },
     {
         productName: "MSF Exams", technologies: "Spring Boot, React Js, MongoDB",
-        description: "An web based application to make interview process much simpler."
+        description: "An web based application to make interview process much simpler.",
+        url: "Used only for internal purpose"
     },
     {
         productName: "SHIELD", technologies: "Java, React Js(Hooks), MySQL, RabbitMQ",
-        description: "Push notification console for admins, who can easily send push notifications for all, selected or based on user subscription. Best feature of this application is admin can selected based on platform like Android,IOS or Web. I have done integration with firebase, report generation for delivery, click and goal conversions, developed console UI for admins, also SDK to received push notification using serviceworkers."
+        description: "Push notification console for admins, who can easily send push notifications for all, selected or based on user subscription. Best feature of this application is admin can selected based on platform like Android,IOS or Web. I have done integration with firebase, report generation for delivery, click and goal conversions, developed console UI for admins, also SDK to received push notification using serviceworkers.",
+        url: "Yet to be hosted."
     }
 ];
 
