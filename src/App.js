@@ -43,7 +43,7 @@ function App() {
           </li>
         </ul>
         <span onClick={(e) => { setSmallNav(!isSmallNav) }}>
-          <i class="glyphicon glyphicon-align-justify di di-menu"></i>
+          <i className="glyphicon glyphicon-align-justify di di-menu"></i>
         </span>
       </nav>
       <div className="container-body fillwidth">

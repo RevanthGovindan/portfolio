@@ -44,7 +44,7 @@ function Work() {
                 {
                     myWork.map((row, key) => {
                         return (
-                            <div>
+                            <div key={key}>
                                 <RowItem row={row} />
                             </div>
                         )

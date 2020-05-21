@@ -31,10 +31,14 @@
 
 .my-image{
   max-width: 70%;
-  border-radius: 50%;
+  border-radius: 5%;
   max-height: 450px;
 }
 
 .name-text{
-  text-decoration: underline;
+  
+}
+
+.name-body{
+  padding-top: 10px;
 }

@@ -22,8 +22,8 @@ function Feedbacks() {
                         {
                             [1, 2, 3, 4, 5].map((val, ind) => {
                                 return (
-                                    <span class={"fa fa-star "+(feedback[activeOne].ratings >= val?"checked":"")}>
-                                        
+                                    <span key={ind} className={"fa fa-star " + (feedback[activeOne].ratings >= val ? "checked" : "")}>
+
                                     </span>
                                 )
                             })
