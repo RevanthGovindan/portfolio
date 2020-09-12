@@ -5,14 +5,14 @@ function Home(props) {
     return (
         <div className="fillwidth home-container">
             <div className="headers">
-                <span>My Self</span>
+                <span>Myself</span>
             </div>
             <div className="home">
                 <div className="my-name">
                     <div className="img-body">
                         <img className="my-image" src={user} alt="Avatar" />
                     </div>
-                    <div>
+                    <div className="name-body">
                         <span className="name-text">Revanth G </span>
                         {/* <span>B.Tech - IT</span> */}
                     </div>
@@ -35,7 +35,7 @@ function Home(props) {
                     <span className="flex contact-link">
                         <a href="https://docs.google.com/document/u/0/d/1FtLL3BobScU0N0h4uAwfyJ4I59FXX_TrUfImcu0zOFc/export?format=pdf"
                             target="_blank">
-                            Download my CV
+                            Download My Resume
                         </a>
                     </span>
                 </div>

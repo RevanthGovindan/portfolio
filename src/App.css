@@ -149,6 +149,7 @@ nav .di-menu {
     text-align: justify;
 }
 
-.contact-link {
-    color: #007bff;
+.contact-link{
+  color: #007bff;
+  cursor: pointer;
 }
