@@ -9,6 +9,7 @@ export const navBar = {
 
 export const skills = [
     { name: "React Js", mark: "90%" },
+    { name: "React Native", mark: "70%" },
     { name: "Node Js", mark: "85%" },
     { name: "HTML 5", mark: "85%" },
     { name: "C", mark: "80%" },
@@ -35,12 +36,16 @@ export const myWork = [
     {
         productName: "MSF Exams", technologies: "Spring Boot, React Js, MongoDB",
         description: "An web based application to make interview process much simpler.",
-        url: "Used only for internal purpose"
+        url: "Used only for internal purposes"
     },
     {
         productName: "SHIELD", technologies: "Java, React Js(Hooks), MySQL, RabbitMQ",
-        description: "Push notification console for admins, who can easily send push notifications for all, selected or based on user subscription. Best feature of this application is admin can selected based on platform like Android,IOS or Web. I have done integration with firebase, report generation for delivery, click and goal conversions, developed console UI for admins, also SDK to received push notification using serviceworkers.",
-        url: "Yet to be hosted."
+        description: "Push notification console for admins, who can easily send push notifications for all, selected or based on user subscription. Best feature of this application is admin can selected based on platform like Android,IOS or Web. I have done integration with firebase, report generation for delivery, click and goal conversions, developed console UI for admins, also SDK to received push notification using serviceworkers. Also it is an SDK which can be easily integrated to other applications for push notification.",
+        url: "https://mobile-ktrader.kgi.sg/console-shield/base"
+    },
+    {
+        productName: "Hankerbee", technologies: "Java, MySQL, React Native,Redux Js",
+        description: "A Food delivery application, which is also included bakery and super markets, live updates, order tracking with live location are the highlighting features of this application,not launched yet, it is still in development phase only."
     }
 ];
 

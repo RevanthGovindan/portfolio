@@ -15,9 +15,14 @@ function Skills() {
                                 <span className="tech-name">{row.name}</span>
                                 <span className="tech-per">
                                     <div className="per-bar">
-                                        <div style={{width:(row.mark),backgroundColor:"#007BFF",borderRadius:"20px",
-                                    borderTopRightRadius:"0px",borderBottomRightRadius:"0px"}}>
-                                        {row.mark}
+                                        <div style={{
+                                            width: (row.mark),
+                                            backgroundColor: "#007BFF",
+                                            borderRadius: "20px",
+                                            borderTopRightRadius: "20px",
+                                            borderBottomRightRadius: "20px",
+                                        }}>
+                                           <p className="percent-text">{row.mark}</p> 
                                         </div>
                                     </div>
                                 </span>

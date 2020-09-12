@@ -3,23 +3,22 @@
 @import "./css/home.css";
 @import "./css/feedbacks.css";
 @import "./css/contact.css";
-
 .flex {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav > div{
-  padding: 10px 30px !important;
+nav>div {
+    padding: 10px 30px !important;
 }
 
-.link{
-  position: relative;
-  cursor: pointer;
+.link {
+    position: relative;
+    cursor: pointer;
     display: block;
     padding: .5rem .75rem;
     margin-left: -1px;
@@ -27,38 +26,38 @@ nav > div{
     color: #007bff;
 }
 
-a:hover{
-  text-decoration: none;
+a:hover {
+    text-decoration: none;
 }
 
-.navbar{
-  width: 100%;
-  background-color: #1d1818;
-  border-bottom: 3px solid #007bff;
-  color: white;
-  margin-bottom: 0px;
+.navbar {
+    width: 100%;
+    background-color: #1d1818;
+    border-bottom: 3px solid #007bff;
+    color: white;
+    margin-bottom: 0px;
 }
 
 section {
-  padding: 50px 0 0px 0;
+    padding: 50px 0 0px 0;
 }
 
 section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 100%;
-  box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.headers{
-  font-size: 20px;
-  text-decoration: underline;
-  text-align: center;
-  padding-top: 20px;
+.headers {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.navbar-ul{
+.navbar-ul {
     width: 100%;
     list-style: none;
     display: none;
@@ -66,74 +65,90 @@ section .container {
     justify-content: space-around;
     margin-bottom: 0px;
     flex-wrap: wrap;
-    transition: height .3s ease-out;
 }
-.navbar-ul.visible{
-  position: absolute;
+
+.navbar-ul.visible {
+    position: absolute;
     display: flex;
     overflow: hidden;
     top: 49px;
     background: #333;
     height: 220px;
 }
-.navbar-ul > li {
-  cursor: pointer;
+
+.navbar-ul>li {
+    cursor: pointer;
 }
 
-.navbar-ul > li.active {
-  color: #007bff;
+.navbar-ul>li.active {
+    color: #007bff;
 }
 
-.container-body{
-  height:60%;
+.container-body {
+    height: 94%;
+}
+
+.container-body::after {
+    content: "";
+    background: url('./assets/background.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .di {
-  display: inline-block;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0);
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
 }
 
 nav .di-menu {
-  position: absolute;
-  right: 5vw;
-  margin: auto 0;
-  font-size: 20pt;
-  line-height: 36pt;
-  top: 0;
+    position: absolute;
+    right: 5vw;
+    margin: auto 0;
+    font-size: 20pt;
+    line-height: 36pt;
+    top: 0;
 }
 
 @media screen and (min-width: 600px) {
-nav .di-menu {
-    display: none;
-}
-.navbar-ul > li {
-  cursor: pointer;
-  width: 100px;
+    nav .di-menu {
+        display: none;
+    }
+    .navbar-ul>li {
+        cursor: pointer;
+        width: 100px;
+    }
+    .navbar-ul {
+        flex-direction: row;
+        position: initial;
+        display: flex;
+    }
+    .navbar {
+        margin-bottom: 0px;
+        height: 5%;
+    }
 }
 
-.navbar-ul{
-  flex-direction: row;
-  position: initial;
-  display: flex;
-}
-.navbar{
-  margin-bottom: 0px;
-  height: 5%;
-}
-}
 
 /* .di-menu:before {
   content: "\F35C";
 } */
 
-.text-justify{
-  text-align: justify;
+.text-justify {
+    text-align: justify;
 }
 
-.contact-link{
-  color: #007bff;
+.contact-link {
+    color: #007bff;
 }

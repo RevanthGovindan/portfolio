@@ -24,8 +24,14 @@ function RowItem(props) {
                     {props.row.technologies}<br />
                     <span><h5>Description :</h5></span>
                     {props.row.description}<br />
-                    <span><h5>URL :</h5></span>
-                    <a href={props.row.url} target="_blank">{props.row.url}</a>
+                    {
+                        props.row.url ?
+                            <>
+                                <span><h5>URL :</h5></span>
+                                <a href={props.row.url} target="_blank">{props.row.url}</a>
+                            </> :
+                            <></>
+                    }
                 </div>
             </div>
         </div>
