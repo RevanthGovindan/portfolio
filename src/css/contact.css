@@ -14,6 +14,10 @@
 
 .name-input>input{
     width: 60%;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    height: 40px;
 }
 
 .number-input{
@@ -25,6 +29,10 @@
 
 .number-input>input{
     width: 60%;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    height: 40px;
 }
 
 .message-input{
@@ -37,6 +45,10 @@
 .message-input>textarea{
     width: 60%;
     height: 130px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .social-media{
@@ -69,4 +81,24 @@
 
 .social-media>div:nth-child(6)>a>i{
     color: rgb(49, 97, 49);
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+a > .fa-linkedin{
+    color: #337ab7;
+}
+
+.btn-primary{
+    background-color: #0089ff;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

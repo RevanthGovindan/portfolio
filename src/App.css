@@ -36,6 +36,7 @@ a:hover {
     border-bottom: 3px solid #007bff;
     color: white;
     margin-bottom: 0px;
+    height: 60px;
 }
 
 section {
@@ -52,9 +53,10 @@ section .container {
 
 .headers {
     font-size: 20px;
-    text-decoration: underline;
     text-align: center;
     padding-top: 20px;
+    color: #ffff;
+    font-weight: bold;
 }
 
 .navbar-ul {
@@ -85,7 +87,9 @@ section .container {
 }
 
 .container-body {
-    height: 94%;
+    height: calc(100% - 60px);
+    background-color: rgba(0,0,0,0.6);
+    overflow-y: scroll;
 }
 
 .container-body::after {
@@ -136,7 +140,7 @@ nav .di-menu {
     }
     .navbar {
         margin-bottom: 0px;
-        height: 5%;
+        height: 60px;
     }
 }
 
@@ -150,6 +154,12 @@ nav .di-menu {
 }
 
 .contact-link{
-  color: #007bff;
+  color: #ffff;
   cursor: pointer;
+  text-decoration: underline;
+}
+
+a {
+    color: #ffff;
+    text-decoration: underline;
 }

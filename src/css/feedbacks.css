@@ -1,5 +1,6 @@
 .feedback-description{
     width: 60%;
+    color: #ffff;
 }
 
 .forward-btn{
@@ -44,4 +45,8 @@
 
 .checked{
     color: orange;
+}
+
+.glyphicon-menu-right{
+    color: #ffff;
 }

@@ -11,9 +11,6 @@ function RowItem(props) {
                 <div className="prod-name">
                     {props.row.productName}
                 </div>
-                <div>
-                    <i className="glyphicon glyphicon-triangle-bottom"></i>
-                </div>
             </div>
             <div ref={description} className="prod-head" style={{
                 maxHeight: (showDescription ? description.current.scrollHeight : 0),
@@ -50,7 +47,7 @@ function Work() {
                 {
                     myWork.map((row, key) => {
                         return (
-                            <div key={key}>
+                            <div  className="prod-row" key={key}>
                                 <RowItem row={row} />
                             </div>
                         )

@@ -8,44 +8,56 @@ export const navBar = {
 };
 
 export const skills = [
-    { name: "React Js", mark: "90%" },
-    { name: "React Native", mark: "70%" },
-    { name: "Node Js", mark: "85%" },
-    { name: "HTML 5", mark: "85%" },
     { name: "C", mark: "80%" },
-    { name: "CSS 3", mark: "80%" },
-    { name: "MongoDB", mark: "80%" },
+    { name: "Javascript", mark: "90%" },
     { name: "JAVA", mark: "70%" },
-    { name: "Spring Boot", mark: "70%" },
-    { name: "Angular >4", mark: "70%" },
+    { name: "Typescript", mark: "75%" },
+    { name: "MongoDB", mark: "80%" },
     { name: "MySQL", mark: "70%" },
-    { name: "Python", mark: "55%" }
+    { name: "Redis", mark: "70%" },
+    { name: "HTML 5", mark: "85%" },
+    { name: "CSS 3", mark: "80%" },
+    { name: "React Js", mark: "90%" },
+    { name: "React Native", mark: "80%" },
+    { name: "Node Js", mark: "85%" },
+    { name: "Spring Boot", mark: "70%" },
+    { name: "Angular >4", mark: "70%" }
 ];
 
 export const myWork = [
     {
         productName: "Examly", technologies: "Angular 4, PrimeNg, Hapi Js, MySQL, Sequelize Js",
         description: "Examly is an AI Powered, Mobile First, Learning & Assessment Tool for corporates and coaching centers of all sizes, white labeling is highlighting feature of it, based on test data we can track upto individual student performance.",
-        url: "https://examly.io"
+        url: "https://examly.io",
+        logo: "https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png"
     },
     {
         productName: "Shubh Trade", technologies: "Java, React Js,Redux Js, SQL",
         description: "An online Indian trade platform with both NSE and BSE exchanges with huge number of active users. Listed in top 10 brokerage applications in India.",
-        url: "https://shubhweb.indiabulls.com/"
+        url: "https://shubhweb.indiabulls.com/",
+        logo: "https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png"
     },
     {
         productName: "MSF Exams", technologies: "Spring Boot, React Js, MongoDB",
         description: "An web based application to make interview process much simpler.",
-        url: "Used only for internal purposes"
+        url: "Used only for internal purposes",
+        logo: "https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png"
     },
     {
         productName: "SHIELD", technologies: "Java, React Js(Hooks), MySQL, RabbitMQ",
         description: "Push notification console for admins, who can easily send push notifications for all, selected or based on user subscription. Best feature of this application is admin can selected based on platform like Android,IOS or Web. I have done integration with firebase, report generation for delivery, click and goal conversions, developed console UI for admins, also SDK to received push notification using serviceworkers. Also it is an SDK which can be easily integrated to other applications for push notification.",
-        url: "https://mobile-ktrader.kgi.sg/console-shield/base"
+        url: "https://mobile-ktrader.kgi.sg/console-shield/base",
+        logo: "https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png"
     },
+    // {
+    //     productName: "Hankerbee", technologies: "Java, MySQL, React Native,Redux Js",
+    //     description: "A Food delivery application, which is also included bakery and super markets, live updates, order tracking with live location are the highlighting features of this application,not launched yet, it is still in development phase only."
+    // }
     {
-        productName: "Hankerbee", technologies: "Java, MySQL, React Native,Redux Js",
-        description: "A Food delivery application, which is also included bakery and super markets, live updates, order tracking with live location are the highlighting features of this application,not launched yet, it is still in development phase only."
+        productName: "Upstox Rifle", technologies: "Typescript, Node JS(Express), Redis, Kafka, MongoDB, MySQL",
+        description: "Upstox API is a set of rest APIs that provide data required to build a complete investment and trading platform. Execute orders in real time, manage user portfolio, stream live market data (using Websocket), and more",
+        url: "https://developer.upstox.com",
+        logo: "https://examly.io/wp-content/uploads/2017/10/examly-logo-white-2-1-uai-258x76.png"
     }
 ];
 

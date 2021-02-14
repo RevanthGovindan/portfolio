@@ -53,27 +53,27 @@ function Contact() {
                     </div>
                 </div>
                 <div className="social-media">
-                    <div>
+                    <div className="social-icon">
                         <a href="https://www.linkedin.com/in/revanth-g-a15468126" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-linkedin"></i></a>
                     </div>
-                    <div>
+                    <div className="social-icon">
                         <a href="https://github.com/RevanthGovindan" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-github"></i></a>
                     </div>
-                    <div>
+                    <div className="social-icon">
                         <a href="https://www.facebook.com/revanth.kumar.92505" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-facebook-official"></i></a>
                     </div>
-                    <div>
+                    <div className="social-icon">
                         <a href="https://www.instagram.com/revanth____" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-instagram"></i></a>
                     </div>
-                    <div>
+                    <div className="social-icon">
                         <a href="https://www.quora.com/profile/Revanth-65" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-quora"></i></a>
                     </div>
-                    <div>
+                    <div className="social-icon">
                         <a href="https://api.whatsapp.com/send?phone=919488808412" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-whatsapp"></i></a>
                     </div>

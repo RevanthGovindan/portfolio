@@ -1,10 +1,11 @@
 .skills-body > div > span:first-child{
-    max-width: 20%;
-    text-align: right;
+    max-width: 15%;
+    text-align: left;
 }
 
 .tech-name{
     width: 20%;
+    color: #ffff;
 }
 
 .tech-per {
