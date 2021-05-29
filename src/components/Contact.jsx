@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { db } from '../firebase';
+import { db, fbPerformance } from '../firebase';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -10,12 +10,15 @@ function Contact() {
         if (name === "" || number === "" || message === "") {
             alert("Fields should not be empty!");
         } else {
+            let contact = fbPerformance.trace("CONTACT");
+            contact.start();
             db.collection("contacts").add({
                 name: name,
                 number: number,
                 message: message
             })
                 .then(function () {
+                    contact.stop();
                     setName("");
                     setNumber("");
                     setMessage("");
@@ -38,13 +41,13 @@ function Contact() {
             <div className="contact-body">
                 <div className="inputs">
                     <div className="name-input">
-                        <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name}/>
+                        <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name} />
                     </div>
                     <div className="number-input">
-                        <input type="text" placeholder="Email/Number" onChange={(e) => setNumber(e.target.value)} value={number}/>
+                        <input type="text" placeholder="Email/Number" onChange={(e) => setNumber(e.target.value)} value={number} />
                     </div>
                     <div className="message-input">
-                        <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} value={message}/>
+                        <textarea placeholder="Message" onChange={(e) => setMessage(e.target.value)} value={message} />
                     </div>
                     <div>
                         <button className="btn btn-primary" onClick={() => { onSendClick() }}>
