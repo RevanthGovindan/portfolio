@@ -8,6 +8,7 @@ export const navBar = {
 };
 
 export const skills = [
+    { name: "Golang", mark: "90%" },
     { name: "C", mark: "80%" },
     { name: "Javascript", mark: "90%" },
     { name: "JAVA", mark: "70%" },

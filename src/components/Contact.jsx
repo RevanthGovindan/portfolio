@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { db, fbPerformance } from '../firebase';
+import { db } from '../firebase';
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -10,15 +11,12 @@ function Contact() {
         if (name === "" || number === "" || message === "") {
             alert("Fields should not be empty!");
         } else {
-            let contact = fbPerformance.trace("CONTACT");
-            contact.start();
-            db.collection("contacts").add({
+            collection(db,"contacts").add({
                 name: name,
                 number: number,
                 message: message
             })
                 .then(function () {
-                    contact.stop();
                     setName("");
                     setNumber("");
                     setMessage("");

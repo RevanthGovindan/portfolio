@@ -1,4 +1,5 @@
-import firebase from "firebase";
+import {initializeApp} from "firebase/app";
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAJ646BNkDzlIwTXsEDG80XpLgw8mqMh3Q",
@@ -9,7 +10,6 @@ const firebaseConfig = {
     messagingSenderId: "763993411291",
     appId: "1:763993411291:web:c3155206adaa46bc"
 };
-firebase.initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
-export const db = firebase.firestore();
-export const fbPerformance = firebase.performance();
+export const db = getFirestore();
