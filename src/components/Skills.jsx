@@ -4,9 +4,6 @@ import { skills } from '../constants';
 function Skills() {
     return (
         <div className="skills fillwidth fillheight">
-            <div className="headers">
-                <span>My Skills</span>
-            </div>
             <div className="skills-body">
                 {
                     skills.map((row, key) => {

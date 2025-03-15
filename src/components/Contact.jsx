@@ -65,10 +65,6 @@ function Contact() {
                             <i className="fa fa-github"></i></a>
                     </div>
                     <div className="social-icon">
-                        <a href="https://www.facebook.com/revanth.kumar.92505" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-facebook-official"></i></a>
-                    </div>
-                    <div className="social-icon">
                         <a href="https://www.instagram.com/revanth____" target="_blank" rel="noopener noreferrer">
                             <i className="fa fa-instagram"></i></a>
                     </div>

@@ -3,17 +3,17 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Feedbacks from './components/Feedbacks';
 import Skills from './components/Skills';
-import Work from './components/Work';
 import Education from './components/Education';
 import { navBar } from './constants';
 import './App.css';
+import Projects from './components/Projects';
 
 function App() {
   const [currentTab, setCurrentTab] = useState(navBar.HOME);
   const [isSmallNav, setSmallNav] = useState(false);
   const components = {
     HOME: <Home changeTab={() => setCurrentTab(navBar.CONTACT)} />, SKILLS: <Skills />,
-    WORK: <Work />, EDUCATION: <Education />,
+    WORK: <Projects />, EDUCATION: <Education />,
     FEEDBACKS: <Feedbacks />, CONTACT: <Contact />
   }
 
@@ -31,7 +31,7 @@ function App() {
           </li>
           <li className={(currentTab === navBar.WORK ? "active" : '')}
             onClick={() => { setCurrentTab(navBar.WORK); setSmallNav(false) }}>
-            Work
+            Projects
           </li>
           <li className={(currentTab === navBar.FEEDBACKS ? "active" : '')}
             onClick={() => { setCurrentTab(navBar.FEEDBACKS); setSmallNav(false) }}>

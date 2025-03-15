@@ -2,6 +2,14 @@
     padding: 10px;
 }
 
+.company-name{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ffff;
+    font-weight: bold;
+}
+
 .work-body{
     padding-top: 20px;
     display: flex;

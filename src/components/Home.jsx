@@ -33,7 +33,7 @@ function Home(props) {
                     </span>
                     <br />
                     <span className="flex contact-link">
-                        <a href="https://docs.google.com/document/u/0/d/1FtLL3BobScU0N0h4uAwfyJ4I59FXX_TrUfImcu0zOFc/export?format=pdf"
+                        <a href="https://drive.google.com/file/d/1ParF-IS6d5LPlzvdUcF9-_mByeYh9MIi/view?usp=sharing"
                             target="_blank">
                             Download My Resume
                         </a>

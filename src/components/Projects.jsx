@@ -36,20 +36,29 @@ function RowItem(props) {
 }
 
 
-function Work() {
-
+function Projects() {
     return (
         <div className="work fillwidth fillheight">
-            <div className="headers">
-                <span>My Work</span>
-            </div>
             <div className="work-body">
                 {
                     myWork.map((row, key) => {
                         return (
-                            <div  className="prod-row" key={key}>
-                                <RowItem row={row} />
-                            </div>
+                            <>
+                                <div className="company-name" key={key}>
+                                    <span>{row.company}</span>
+                                </div>
+                                {
+                                    row.projects.map((project, proKey) => {
+                                        return (
+                                            <>
+                                                <div className="prod-row" key={proKey}>
+                                                    <RowItem row={project} />
+                                                </div>
+                                            </>
+                                        )
+                                    })
+                                }
+                            </>
                         )
                     })
                 }
@@ -58,4 +67,4 @@ function Work() {
     );
 }
 
-export default Work;
+export default Projects;

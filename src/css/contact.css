@@ -68,18 +68,14 @@
 }
 
 .social-media>div:nth-child(3)>a>i{
-    color: rgb(34, 34, 117);
-}
-
-.social-media>div:nth-child(4)>a>i{
     color: rgb(231, 93, 134);
 }
 
-.social-media>div:nth-child(5)>a>i{
+.social-media>div:nth-child(4)>a>i{
     color: #b92b27;
 }
 
-.social-media>div:nth-child(6)>a>i{
+.social-media>div:nth-child(5)>a>i{
     color: rgb(49, 97, 49);
 }
 
