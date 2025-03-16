@@ -36,7 +36,7 @@ function Home(props) {
                     <br />
                     <span className="flex contact-link">
                         <a href="https://drive.google.com/file/d/1ParF-IS6d5LPlzvdUcF9-_mByeYh9MIi/view?usp=sharing"
-                            target="_blank">
+                            target="_blank" rel="noreferrer">
                             Download My Resume
                         </a>
                     </span>

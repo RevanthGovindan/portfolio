@@ -25,7 +25,7 @@ function RowItem(props) {
                         props.row.url ?
                             <>
                                 <span><h5>URL :</h5></span>
-                                <a href={props.row.url} target="_blank">{props.row.url}</a>
+                                <a href={props.row.url} target="_blank" rel="noreferrer">{props.row.url}</a>
                             </> :
                             <></>
                     }
