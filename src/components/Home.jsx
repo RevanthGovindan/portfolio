@@ -18,16 +18,18 @@ function Home(props) {
                     </div>
                 </div>
                 <div className="description">
-                    <div style={{ textAlign: "justify"}}>
-                        Hi, I'm full stack developer, I enjoy building applications from scratch,I love to
-                        solve complex problems in <a href="https://www.hackerrank.com/Revanth_G" target="_blank"
-                            rel="noopener noreferrer">
-                            Hackerrank</a> and <a href="http://app.e-box.co.in" target="_blank"
-                            rel="noopener noreferrer">Ebox</a> platforms.
-                I primarily use Javascript(with frameworks) and Java,also I will not restrict me to any language,
-                I write reusable codes. I can proudly say that leadership and responsibility is my best quality.
-                My hobbies are listening to musics, watching movies and riding.
-                    </div><br />
+                    <div>
+                        Thank you for visiting, I'm a passionate full-stack developer who loves building applications from scratch and solving complex
+                        problems on platforms like
+                        <a style={{marginLeft:5}} href="https://www.hackerrank.com/Revanth_G" target="_blank" rel="noopener noreferrer">Hackerrank</a>, 
+                        <a style={{marginLeft:5}} href="http://app.e-box.co.in" target="_blank" rel="noopener noreferrer">Ebox</a> and 
+                        <a style={{marginLeft:5}} href="https://leetcode.com/u/revanthji14/" target="_blank" rel="noopener noreferrer">Leetcode</a>. 
+                        I primarily work with Golang and JavaScript,but I don't restrict myself to any language.
+                        I focus on writing reusable, efficient code. Leadership and responsibility are my strongest qualities, 
+                        and I take pride in driving projects forward. Beyond coding,
+                        I'm keen on exploring personal finance and investments. In my free time,
+                        I enjoy listening to music, watching movies, and riding.
+                    </div>
                     <span className="flex contact-link" onClick={() => props.changeTab()}>
                         Let's discuss
                     </span>
